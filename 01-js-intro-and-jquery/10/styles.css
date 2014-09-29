@@ -1,0 +1,11 @@
+* {
+    text-align: center;
+}
+
+#oculto {
+	display: none;
+}
+
+.blue{
+    color: blue;   
+}

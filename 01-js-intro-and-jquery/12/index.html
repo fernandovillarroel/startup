@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+        <title>Day 1: JSIntro &  (12)</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script>
+            $(document).ready(function(){
+
+                $.ajax({
+                    url: 'http://tweetproxy.ap01.aws.af.cm/search?q=html5',
+                    dataType: 'jsonp',
+                    success: function(dataJsonp){
+
+                        var text = '';
+                        var len = dataJsonp.statuses.length;
+                        for(var i=0;i<len;i++){
+
+                            twitterEntry = dataJsonp.statuses[i];
+                            text += '<p> <img class="imagenn" src = "' + twitterEntry.user.profile_image_url_https + '"/> <b>From:</b> ' + twitterEntry.user.name + '<br> <b>Text:</b> ' + twitterEntry.text + ', <br><b>Created at:</b> '+ twitterEntry.created_at + '</p>'
+                        }
+                        $('#twitterFeed').html(text);
+                    }
+                });
+            })
+        </script>
+    </head>
+    <body>
+        <aside>
+            <div id = 'twitterFeed'></div>
+        </aside>
+
+    </body>
+</html>
