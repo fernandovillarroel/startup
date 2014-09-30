@@ -15,9 +15,10 @@ $(document).ready(function() {
   tlotrIII.set('actors',[actor1,actor2,actor3]);
   
   var cantActores = tlotrIII.get('actors').length;
+  var i;
   var names = '';
 
-  for (var i = 0; i < cantActores; i++) {
+  for (i = 0; i < cantActores; i++) {
     names = names + tlotrIII.get('actors')[i].getLastName()+' ';
 }
 
