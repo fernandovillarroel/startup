@@ -1,0 +1,40 @@
+{
+
+  "profiles":  [
+    {
+      "name":"Lalo Landa",
+      "degree":"Lumberjack",
+      "education":"Wooden University",
+      "actual_job":"Lumberjack at Pinocho's House",
+      "jobs":
+      [{
+        "years":"2009-2010",
+        "ocupation":"Plumber",
+        "at":"Mario's House"
+      },
+      {
+        "years":"2005-2009",
+        "ocupation":"Lumberjack",
+        "at":"Black Forest"             
+      }]
+    },
+    {
+      "name":"Lucky Luciano",
+      "degree":"Poker Engineer",
+      "education":"University of Pokerstars",
+      "actual_job":"Poker Player at Casino Rio",
+      "jobs":
+      [{
+        "years":"2008-2013",
+        "ocupation":"Poker Player",
+        "at":"Bart's Casino"
+      },
+      {
+        "years":"2005-2008",
+        "ocupation":"Babysitter",
+        "at":"Dr Hibbert's House"             
+      }]
+    }
+  ]
+
+}
