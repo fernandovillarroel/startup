@@ -1,0 +1,60 @@
+<!-- Link to the complete project: 
+     https://www.dropbox.com/s/qo67tj5hya7droz/Topic%205%20-%20MVC%20%2B%20Backbone%20%28Villarroel%29.rar?dl=0
+   -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Topic 5</title>
+
+    <!-- Bootstrap style-->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- RequireJS -->
+    <script data-main="js/main" src="js/require.js"></script>
+
+  </head>
+
+  <body>
+      <!-- Container (center) -->
+    <div class="container">
+      <h1><div class='text-center text-success bg-success'>My favorite movies</div></h1>
+
+      <div class="panel panel-default" id='panelPpal'>
+
+        <div class="panel-body" id='panelPpalMovies'></div>
+
+        <div class="panel-heading" id='panelForm'>
+
+          <form role="form" id= "formID">
+            <div class="form-group">
+              <p><h3>Add your movie:</h3></p>
+              <label for="myTitle">Title</label>
+              <input type="title" class="form-control" id="myTitle"
+             placeholder="Title">
+            </div>
+            <div class="form-group">
+              <label for="myYear">Year</label>
+              <input type="year" class="form-control" id="myYear"
+             placeholder="Year">
+            </div>
+            <div class="form-group">
+              <label for="myGenre">Genre</label>
+              <input type="genre" class="form-control" id="myGenre"
+             placeholder="Genre">
+            </div>
+            <div class="form-group">
+              <label for="mySynapsis">Synapsis</label>
+              <textarea class="form-control" rows="3" placeholder="Synapsis" id="mySynapsis"></textarea>
+            </div>
+            <button type="submit" class="btn btn-success" id="theButton">Add movie</button>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
