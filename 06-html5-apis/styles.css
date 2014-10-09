@@ -1,0 +1,26 @@
+.center{
+	text-align: center;
+}
+
+.fail{
+	color: red;
+}
+
+.success{
+	color:green;
+}
+
+#holder{ 
+	border: 10px dashed #ccc; 
+	width: 300px; 
+	height: 300px; 
+	margin: 20px auto;
+}
+
+#holder.hover{ 
+	border: 10px dashed #333; 
+}
+
+#myCanvas, #myAnimatedCanvas, #mySVG{
+	border: 1px dashed;
+}
